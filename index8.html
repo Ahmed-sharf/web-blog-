@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <titl>البرمجة </titl>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/animations.js"></script>
+  <script defer src="./js/theme.js"></script>
+  <style>
+    /* Responsive adjustments */
+    .hero,
+    .features,
+    .showcase,
+    .testimonials,
+    .pricing,
+    .contact,
+    .newsletter {
+      padding: 20px;
+    }
+
+    .hero h1,
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .features-grid,
+    .pricing-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature-card,
+    .pricing-card {
+      flex: 1 1 calc(100% - 40px);
+      max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+
+      .hero h1,
+      .hero p {
+        font-size: 2rem;
+      }
+
+      .feature-card,
+      .pricing-card {
+        flex: 1 1 calc(50% - 40px);
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .hero h1,
+      .hero p {
+        font-size: 2.5rem;
+      }
+
+      .feature-card,
+      .pricing-card {
+        flex: 1 1 calc(33.33% - 40px);
+      }
+    }
+  </style>
+</head>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary - The Future of Design</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/animations.js"></script>
+  <script defer src="./js/theme.js"></script>
+</head>
+
+<body>
+  <header class="site-header bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <a href="#" class="text-decoration-none text-dark"><span>Vision</span>ary</a>
+      </div>
+      <nav class="main-nav">
+        <button class="btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header-actions d-flex align-items-center">
+        <button class="btn btn-outline-dark me-2" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero bg-primary text-white text-center py-5">
+      <div class="container">
+        <h1>Design the future with <span>Visionary</span></h1>
+        <p>A revolutionary design platform that empowers creators to bring their ideas to life with unprecedented speed
+          and flexibility.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#features" class="btn btn-light">Explore Features</a>
+          <a href="#showcase" class="btn btn-outline-light">See it in Action</a>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Users Say</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="FB_IMG_1685263189925.jpg" class="card-img-top" alt="User 1">
+              <div class="card-body">
+                <p class="card-text">"Visionary has completely transformed our design workflow. The quality of our
+                  output has improved dramatically."</p>
+                <h5 class="card-title">Sarah Johnson</h5>
+                <p class="card-subtitle text-muted">Lead Designer, Acme Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="FB_IMG_1687031680400.jpg" class="card-img-top" alt="User 2">
+              <div class="card-body">
+                <p class="card-text">"The collaboration features alone are worth the price. Communication has never been
+                  easier."</p>
+                <h5 class="card-title">David Chen</h5>
+                <p class="card-subtitle text-muted">UX Director, TechStart</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="FB_IMG_1693104572096.jpg" class="card-img-top" alt="User 3">
+              <div class="card-body">
+                <p class="card-text">"As a freelancer, Visionary gives me the power of an entire design team. Highly
+                  recommended!"</p>
+                <h5 class="card-title">Michelle Rodriguez</h5>
+                <p class="card-subtitle text-muted">Independent Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Visionary. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
+<html lang="en" class="responsive">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary - The Future of Design</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <script defer src="./js/main.js"></script>
+  <script defer src="./js/animations.js"></script>
+  <script defer src="./js/theme.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#"><span>Vision</span>ary</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <!-- Hero Section -->
+    </section>
+
+    <section id="features" class="features">
+      <!-- Features Section -->
+    </section>
+
+    <section id="showcase" class="showcase">
+      <!-- Showcase Section -->
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <!-- Testimonials Section -->
+    </section>
+
+    <section id="pricing" class="pricing">
+      <!-- Pricing Section -->
+    </section>
+
+    <section class="cta">
+      <!-- Call to Action Section -->
+    </section>
+
+    <section id="contact" class="contact">
+      <!-- Contact Section -->
+    </section>
+
+    <section class="newsletter">
+      <!-- Newsletter Section -->
+    </section>
+  </main>
+  </section>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in">Design the future with <span>Visionary</span></h1>
+        <p class="fade-in delay-1">A revolutionary design platform that empowers creators to bring their ideas to life
+          with unprecedented speed and flexibility.</p>
+        <div class="hero-cta fade-in delay-2">
+          <a href="#features" class="btn btn-primary">Explore Features</a>
+          <a href="#showcase" class="btn btn-outline">See it in Action</a>
+        </div>
+      </div>
+      <div class="hero-image fade-in delay-3">
+        <img src="FB_IMG_1694191089051.jpg" alt="Visionary design platform interface">
+      </div>
+    </div>
+    <div class="hero-shape"></div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Powerful Features</h2>
+        <p>Everything you need to create stunning designs</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+          </div>
+          <h3>Smart Layout</h3>
+          <p>Create responsive designs that adapt seamlessly to any screen size without writing a single line of code.
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3>3D Components</h3>
+          <p>Add depth to your designs with our library of customizable 3D components that bring your ideas to life.
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              <line x1="8" y1="2" x2="8" y2="18"></line>
+              <line x1="16" y1="6" x2="16" y2="22"></line>
+            </svg>
+          </div>
+          <h3>Design System</h3>
+          <p>Maintain consistency across your projects with our comprehensive design system management tools.</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3>AI Assistant</h3>
+          <p>Let our AI suggest design improvements, generate components, and help you create better designs faster.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="showcase" class="showcase">
+    <div class="container">
+      <div class="section-header">
+        <h2>See it in Action</h2>
+        <p>Discover how Visionary transforms the design process</p>
+      </div>
+      <div class="showcase-tabs">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="tab1">UI Design</button>
+          <button class="tab-btn" data-tab="tab2">Prototyping</button>
+          <button class="tab-btn" data-tab="tab3">Collaboration</button>
+          <button class="tab-btn" data-tab="tab4">Handoff</button>
+        </div>
+        <div class="tabs-content">
+          <div class="tab-panel active" id="tab1">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Intuitive UI Design</h3>
+                <p>Create beautiful interfaces with our drag-and-drop editor. Our smart components adapt to your
+                  design system automatically.</p>
+                <ul class="feature-list">
+                  <li>Smart alignment and distribution</li>
+                  <li>Real-time collaboration</li>
+                  <li>Design system integration</li>
+                  <li>Responsive preview</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Learn more</a>
+              </div>
+              <div class="tab-image">
+                <img src="FB_IMG_1693754258023.jpg" alt="UI Design Interface">
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab2">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Interactive Prototyping</h3>
+                <p>Bring your designs to life with interactive prototypes that feel like the real thing. Test user
+                  flows and interactions without coding.</p>
+                <ul class="feature-list">
+                  <li>Advanced animation controls</li>
+                  <li>Conditional logic</li>
+                  <li>Variable states</li>
+                  <li>User testing integration</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Learn more</a>
+              </div>
+              <div class="tab-image">
+                <img src="FB_IMG_1686414275322.jpg" alt="Prototyping Interface">
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab3">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Seamless Collaboration</h3>
+                <p>Work together in real-time with your team. Comment, resolve issues, and iterate faster than ever
+                  before.</p>
+                <ul class="feature-list">
+                  <li>Real-time cursors and edits</li>
+                  <li>Commenting and feedback</li>
+                  <li>Version history</li>
+                  <li>Role-based permissions</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Learn more</a>
+              </div>
+              <div class="tab-image">
+                <img src="Screenshot_٢٠٢٤١١٠١-١٣٥٠٥١_Facebook.jpg" alt="Collaboration Interface">
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="tab4">
+            <div class="tab-content">
+              <div class="tab-text">
+                <h3>Developer Handoff</h3>
+                <p>Generate code that developers will love. Export CSS, inspect components, and ensure pixel-perfect
+                  implementation.</p>
+                <ul class="feature-list">
+                  <li>Automatic code generation</li>
+                  <li>Asset export</li>
+                  <li>Design tokens</li>
+                  <li>Developer documentation</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Learn more</a>
+              </div>
+              <div class="tab-image">
+                <img src="Screenshot_٢٠٢٤١١٢٠-٢٢٥٨٣٥_Facebook.jpg" alt="Developer Handoff Interface">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Users Say</h2>
+        <p>Join thousands of satisfied designers and teams</p>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Visionary has completely transformed our design workflow. What used to take days now takes hours,
+                and the quality of our output has improved dramatically."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="C:\Users\Ahmed Sharf\Pictures\Camera Roll\Facebook\FB_IMG_1685263189925.jpg"
+                alt="Sarah Johnson">
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Lead Designer, Acme Inc.</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"The collaboration features alone are worth the price. Being able to work with my team in real-time
+                has cut our revision cycles in half and improved communication."</p>
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="David Chen">
+              <div class="author-info">
+                <h4>David Chen</h4>
+                <p>UX Director, TechStart</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"As a freelancer, Visionary gives me the power of an entire design team. The AI suggestions have
+                improved my work and helped me deliver projects faster than ever."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="FB_IMG_1679500356863.jpg" alt="Michelle Rodriguez">
+              <div class="author-info">
+                <h4>Michelle Rodriguez</h4>
+                <p>Independent Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev" aria-label="Previous testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="testimonial-dots">
+            <button class="dot active" aria-label="Go to testimonial 1"></button>
+            <button class="dot" aria-label="Go to testimonial 2"></button>
+            <button class="dot" aria-label="Go to testimonial 3"></button>
+          </div>
+          <button class="testimonial-next" aria-label="Next testimonial">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Simple, Transparent Pricing</h2>
+        <p>Choose the plan that works for you</p>
+      </div>
+      <div class="pricing-toggle">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-toggle">
+          <span class="slider"></span>
+        </label>
+        <span>Yearly <span class="save-badge">Save 20%</span></span>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="pricing-price">
+              <span class="price monthly">$12</span>
+              <span class="price yearly">$9.60</span>
+              <span class="period">/month per user</span>
+            </div>
+            <p>Perfect for individuals and small projects</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>3 projects</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Basic components</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>2GB storage</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Basic support</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Get Started</a>
+        </div>
+        <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Professional</h3>
+            <div class="pricing-price">
+              <span class="price monthly">$24</span>
+              <span class="price yearly">$19.20</span>
+              <span class="period">/month per user</span>
+            </div>
+            <p>Ideal for growing teams and businesses</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Unlimited projects</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Advanced components</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>10GB storage</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Priority support</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Real-time collaboration</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-block">Get Started</a>
+        </div>
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <div class="pricing-price">
+              <span class="price monthly">$49</span>
+              <span class="price yearly">$39.20</span>
+              <span class="period">/month per user</span>
+            </div>
+            <p>For large organizations with advanced needs</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Everything in Professional</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Advanced security</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100GB storage</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>24/7 dedicated support</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Custom integrations</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-block">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to transform your design workflow?</h2>
+        <p>Join thousands of designers who've already made the switch to Visionary.</p>
+        <a href="#" class="btn btn-light">Start Your Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <div>
+              <h4>Email</h4>
+              <p>hello@visionary.design</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <h4>Address</h4>
+              <p>123 Design Avenue, San Francisco, CA 94107</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay updated with our newsletter</h2>
+        <p>Get the latest news, tips, and product updates delivered straight to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-disclaimer">By subscribing, you agree to our Privacy Policy and consent to receive
+          updates from us.</p>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <a href="#"><span>Vision</span>ary</a>
+          </div>
+          <p>Empowering designers to create exceptional experiences through innovative tools and smart workflows.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-group">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Documentation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Visionary. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
